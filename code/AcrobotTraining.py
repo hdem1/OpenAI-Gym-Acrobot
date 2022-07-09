@@ -2,7 +2,7 @@ import gym
 import matplotlib.pyplot as plt
 import numpy as np
 import random as rand
-from os.path import exists
+from os.path import exists, expanduser
 
 env = gym.make('Acrobot-v1')
 
@@ -228,7 +228,7 @@ for iteration in range(final_display_iterations):
 if saving:
     #Creating file:
     print()
-    folder = "/Users/henrydemarest/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-Acrobot/Saved Networks/"
+    folder = expanduser("~/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-Acrobot/Saved Networks/")
     filename = "AB"
     filename = filename + "_gens-" + str(num_generations)
     filename = filename + "_children-"+str(num_children) 

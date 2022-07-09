@@ -2,10 +2,10 @@ import gym
 import matplotlib.pyplot as plt
 import numpy as np
 import random as rand
-from os.path import exists
+from os.path import exists, expanduser
 
 env = gym.make('Acrobot-v1')
-filepath = "/Users/henrydemarest/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-Acrobot/Saved Networks/AB_gens-1_children-150_layers-2_layerHeight-6_networkTests-3_wMax-10_bMax-10_aThreshold-2.txt"
+filepath = expanduser("~/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-Acrobot/Saved Networks/AB_gens-1_children-150_layers-2_layerHeight-6_networkTests-3_wMax-10_bMax-10_aThreshold-2.txt")
 
 #open file:
 file = open(filepath, "r")
